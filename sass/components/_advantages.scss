@@ -1,9 +1,19 @@
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
-    display: flex;
+    margin: -15px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__text {
@@ -23,10 +33,10 @@
 }
 
 .advantages__item {
-  width: 270px;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  width: 100%;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc(50% - 30px);
   }
 }
 

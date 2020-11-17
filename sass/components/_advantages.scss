@@ -7,9 +7,9 @@
   }
 
   &__list {
-    margin: -15px;
     @media screen and (min-width: 768px) {
       display: flex;
+      margin: -15px;
     }
     @media screen and (max-width: 1199px) {
       flex-wrap: wrap;
@@ -34,9 +34,19 @@
 
 .advantages__item {
   width: 100%;
-  margin: 15px;
+
   @media screen and (min-width: 768px) {
-    width: calc(50% - 30px);
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 4);
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 

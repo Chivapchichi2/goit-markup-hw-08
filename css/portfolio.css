@@ -472,12 +472,26 @@ h2 {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .galerry__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
 .galerry__list:first-of-type {
   margin-bottom: 50px;
 }
 
 .galerry__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .galerry__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 /* кнопки галереии */

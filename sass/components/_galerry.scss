@@ -6,6 +6,9 @@
 .galerry__list {
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+  }
   flex-wrap: wrap;
   &:first-of-type {
     margin-bottom: 50px;
@@ -14,6 +17,9 @@
 
 .galerry__item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 /* кнопки галереии */

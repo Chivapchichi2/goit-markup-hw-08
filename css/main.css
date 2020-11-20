@@ -102,6 +102,22 @@ h2 {
   background-color: #ffffff;
 }
 
+.menu-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-button use {
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }

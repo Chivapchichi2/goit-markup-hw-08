@@ -103,6 +103,22 @@ h2 {
   background-color: #ffffff;
 }
 
+.menu-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-button use {
+  display: block;
+  position: absolute;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -457,8 +473,15 @@ h2 {
 }
 
 .galerry {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .galerry {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .galerry__list {
@@ -477,6 +500,12 @@ h2 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .galerry__list + .galerry__list {
+    margin: -15px;
   }
 }
 
@@ -519,10 +548,17 @@ h2 {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
+  width: 100%;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .galerry-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .galerry-card:hover, .galerry-card:focus {
@@ -530,12 +566,18 @@ h2 {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.galerry-card:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .galerry-card {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
-.galerry-card:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .galerry-card {
+    margin: 15px;
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .galerry-card__title {

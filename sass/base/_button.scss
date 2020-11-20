@@ -23,3 +23,19 @@
     background-color: $primary-bg-color;
   }
 }
+
+.menu-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+
+  padding: 0;
+  margin: 0;
+
+  & use {
+    display: block;
+    position: absolute;
+    transform: translate(-5px, -5px);
+  }
+}

@@ -28,7 +28,10 @@
   background: transparent;
   border: none;
   position: absolute;
+  top: 11px;
   right: 15px;
+  display: block;
+  height: 40px;
 
   padding: 0;
   margin: 0;
@@ -37,5 +40,14 @@
     display: block;
     position: absolute;
     transform: translate(-5px, -5px);
+  }
+  & .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
   }
 }

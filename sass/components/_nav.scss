@@ -1,18 +1,19 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
 }
 
 .nav__list {
-  display: flex;
-  padding: 0px;
+  // display: flex;
+  // padding: 0px;
 }
 
 .nav__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: inline-block;
+  margin-top: 60px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: $title-link-color;
 
@@ -29,15 +30,18 @@
   }
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
 .nav__link.current {
   color: $accent-color;
   position: relative;
+  padding-bottom: 8px;
+
   &::after {
     content: "";
+    display: block;
     position: absolute;
     bottom: -1px;
     left: 0;

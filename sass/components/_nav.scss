@@ -18,8 +18,10 @@
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   color: $title-link-color;
 
@@ -36,14 +38,18 @@
   }
 }
 
-// .nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+.nav__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+}
 
 .nav__link.current {
   color: $accent-color;
   position: relative;
-  padding-bottom: 8px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 8px;
+  }
 
   &::after {
     content: "";
